@@ -1,13 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
+
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+  @apply hover:text-yellow duration-300 uppercase;
+}
+
+.buttonGradient {
+  border-image-slice: 1;
+  border-width: 4px;
+  border-left: 2px;
+  border-image-source: linear-gradient(
+    90deg,
+    #24cbff 1.53%,
+    #fc59ff 1.36%,
+    #ffbd0c 117.73%
+  );
+}
+
+h4 {
+  @apply text-2xl md:text-5xl;
+}
+
+.form-control input,
+textarea {
+  @apply px-4 py-2 text-black rounded-md outline-none w-full;
+}
+
+.button__submit {
+  @apply bg-yellow px-4 py-2 text-black font-bold;
 }
