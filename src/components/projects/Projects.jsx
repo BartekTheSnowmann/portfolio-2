@@ -52,7 +52,7 @@ function Projects({ setSelectedPage }) {
 
   const headingVariant = {
     hidden: {
-      y: -100,
+      y: -20,
       opacity: 0,
     },
     show: {
@@ -67,7 +67,7 @@ function Projects({ setSelectedPage }) {
   const imagesVariant = {
     hidden: {
       opacity: 0,
-      y: 100,
+      y: 20,
     },
     show: {
       opacity: 1,
@@ -93,9 +93,9 @@ function Projects({ setSelectedPage }) {
             whileInView="show"
             viewport={{ once: true, amount: 1 }}
           >
-            <h1 className="text-red text-3xl md:text-5xl uppercase font-bold text-left md:text-center">
+            <div className="text-red text-3xl md:text-5xl uppercase font-bold text-left md:text-center">
               Pro<span className="text-white">Jects</span>
-            </h1>
+            </div>
             <p className="mt-6 md:text-center">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
               omnis cumque ad quos est quae corrupti quo eligendi labore. Eius?

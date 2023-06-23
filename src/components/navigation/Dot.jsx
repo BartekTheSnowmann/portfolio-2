@@ -1,8 +1,6 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 function Dot({ page, selectedPage }) {
-  console.log(selectedPage);
   return (
     <div
       className={`${

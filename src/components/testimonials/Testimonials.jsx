@@ -83,7 +83,7 @@ function Testimonials({ setSelectedPage }) {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ delay: 0.6 * index, duration: 0.6 }}
+              transition={{ delay: 0.3 * index }}
             >
               <div
                 className={`relative flex flex-col justify-around items-center p-4 h-60 w-80 bg-${item.color}`}

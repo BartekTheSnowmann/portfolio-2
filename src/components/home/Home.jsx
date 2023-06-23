@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 function Home() {
   const headingVariant = {
     hidden: {
-      y: 100,
+      y: 20,
       opacity: 0,
     },
     show: {
@@ -26,7 +26,7 @@ function Home() {
   const ImgVariant = {
     hidden: {
       opacity: 0,
-      y: 100,
+      y: 20,
     },
     show: {
       opacity: 1,

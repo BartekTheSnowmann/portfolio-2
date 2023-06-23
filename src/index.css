@@ -7,6 +7,10 @@
 html,
 body {
   scroll-behavior: smooth;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 li {
@@ -25,8 +29,12 @@ li {
   );
 }
 
+h1 {
+  @apply font-bold;
+}
+
 h4 {
-  @apply text-2xl md:text-5xl;
+  @apply text-2xl md:text-5xl font-bold;
 }
 
 .form-control input,

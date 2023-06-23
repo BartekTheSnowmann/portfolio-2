@@ -6,7 +6,7 @@ function Skills({ setSelectedPage }) {
   const headingVariant = {
     hidden: {
       opacity: 0,
-      x: -100,
+      x: -20,
     },
     show: {
       opacity: 1,
@@ -79,22 +79,21 @@ function Skills({ setSelectedPage }) {
                 <motion.div
                   className="md:w-1/3"
                   key={item.id}
-                  initial={{ opacity: 0, y: 100 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.5 }}
                   transition={{
-                    delay: 0.6 * index,
+                    delay: 0.3 * index,
                     type: "tween",
-                    duration: 0.6,
                   }}
                 >
                   <div className="z-10 relative h-32 md:h-40">
-                    <div className="font-playfair">
+                    <div className="font-playfair font-bold">
                       <h4>0{item.id}</h4>
                       <h4>{item.heading}</h4>
                     </div>
                     <div
-                      className={`bg-${item.color} w-3/4 h-32 md:h-40 right-0 absolute top-0 z-[-1]`}
+                      className={`${`bg-${item.color}`} w-3/4 h-32 md:h-40 right-0 absolute top-0 z-[-1]`}
                     ></div>
                   </div>
                   <p className="my-4">{item.description}</p>
