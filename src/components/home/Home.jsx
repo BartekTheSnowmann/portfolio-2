@@ -39,6 +39,7 @@ function Home() {
 
   return (
     <section className="min-h-[100vh] flex items-center border-b-2" id="Home">
+      <div className="bg-blue hidden"></div>
       <div className="py-12 w-5/6 mx-auto flex flex-col gap-16 items-center md:flex-row">
         {/* IMG */}
         <div className="md:order-2 flex justify-center basis-3/5 z-30">
